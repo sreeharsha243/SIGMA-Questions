@@ -1,0 +1,16 @@
+h2 {
+  color: orange;
+  color: red;
+  color: rgb(209, 4, 161);
+  color: #00ff00;
+}
+
+p {
+  color: white;
+  background-color: black;
+}
+
+button {
+  background-color: blue;
+  color: white;
+}
