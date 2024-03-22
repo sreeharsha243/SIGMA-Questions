@@ -154,7 +154,67 @@
 //   console.log("Not same last digit");
 // }
 
-let msg = "   Sree Harsha     ";
-console.log(msg.toLowerCase());
-console.log(msg.toUpperCase());
-console.log(msg.trim());
+// let msg = "     Sree Harsha";
+// console.log(msg.toLowerCase());
+// console.log(msg.toUpperCase());
+
+// let newMsg = msg.trim().toUpperCase();
+// console.log(newMsg);
+// console.log(newMsg.slice(5, newMsg.length));
+// console.log(newMsg.slice(1));
+
+// let str = "ILoveCoding"; //only first accurence will change
+// console.log(str.replace("Love", "do"));
+// console.log(str.replace("I", "We"));
+// console.log(str.replace("Coding", "Eating"));
+// console.log(str.repeat(2));
+
+// let msg = "M help";
+// console.log(msg.trim().toUpperCase());
+
+// let nam = "ApnaCollege";
+// console.log(nam.slice(4, 9));
+// console.log(nam.indexOf("na"));
+// console.log(nam.replace("Apna", "Our"));
+// console.log(nam.slice(4, nam.length).replace("l", "t").replace("l", "t"));
+
+// let num = [1, 2, 3, 4, 25];
+// console.log(num[4]);
+// let names = ["harsha", "hari", "ram"];
+// names[0] = "Sree Harsha";
+// names.push("Jai");
+// names.pop();
+// console.log(names);
+// names.unshift("jai");
+// names.shift();
+// console.log(names);
+// let info = ["harsha", 21, 8.6];
+// console.log(info[0]);
+
+// let months = ["january", "july", "march", "august"];
+// // months.shift();
+// // months.shift();
+// // months.unshift("june");
+// // months.unshift("july");
+// console.log(months);
+// console.log(months.indexOf("augus"));
+// console.log(months.includes("august"));
+// let month = ["february", "march", "april"];
+// console.log(months.concat(month));
+// // console.log(months.reverse());
+// console.log(months.slice(2));
+// console.log(months.splice(1, 0, "february"));
+// console.log(months);
+
+// let cars = ["bmw", "audi", "toyota", "benz"];
+// console.log(cars.sort());
+// let nums = [2, 39, 1, 50, 4];
+// console.log(nums.sort());
+
+//Assignment
+
+let assign = ["january", "july", "march", "august"];
+console.log(assign.splice(0, 2, "july", "june"));
+console.log(assign);
+let tech = ["c", "c++", "html", "javascript", "python", "java", "c#", "sql"];
+console.log(tech.reverse().indexOf("javascript"));
