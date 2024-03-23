@@ -213,8 +213,63 @@
 
 //Assignment
 
-let assign = ["january", "july", "march", "august"];
-console.log(assign.splice(0, 2, "july", "june"));
-console.log(assign);
-let tech = ["c", "c++", "html", "javascript", "python", "java", "c#", "sql"];
-console.log(tech.reverse().indexOf("javascript"));
+// let assign = ["january", "july", "march", "august"];
+// console.log(assign.splice(0, 2, "july", "june"));
+// console.log(assign);
+// let tech = ["c", "c++", "html", "javascript", "python", "java", "c#", "sql"];
+// console.log(tech.reverse().indexOf("javascript"));
+
+//constant can changed once it has intialized
+// const a = 10;
+// console.log(a);
+// const a1 = [1, 2, 3];
+// // a1 = [1, 2];  cannot be done for constant array
+// console.log(a1.push(4));
+// console.log(a1);
+
+// let nums = [
+//   [1, 2, 3],
+//   [2, 3],
+//   [3, 4],
+// ];
+// console.log(nums[0][3]);
+
+// let ttt = [
+//   ["X", " ", "O"],
+//   [" ", "X", " "],
+//   ["O", " ", "X"],
+// ];
+// ttt[0][1] = "O";
+// console.log(ttt);
+
+//part-3 assignment
+// let arr1 = [7, 9, 0, -2];
+// let input = prompt("enter the value of n to print n values of array");
+// console.log(arr1.slice(0, input));
+// console.log(arr1.slice(-input));
+
+let str1 = "a";
+if (str1 === " ") {
+  console.log("string is blank");
+} else {
+  console.log("string is not blank");
+}
+
+let str2 = "harsha";
+if (str2[0] == str2[0].toLowerCase()) {
+  console.log("lower case");
+} else {
+  console.log("not a lower case");
+}
+
+// let str3 = prompt("please enter a string");
+// console.log(`${str3}`);
+// console.log(`${str3.trim()}`);
+
+let arr2 = [1, 2, 3, 4, 5];
+let ite = 2;
+if (arr2.indexOf(ite) != -1) {
+  console.log("exists in array");
+} else {
+  console.log("not exists in array");
+}
