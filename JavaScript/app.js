@@ -472,7 +472,122 @@
 
 //Math Object for Math objects like PI,abs,floor,ceil,random.
 
-let num = Math.random();
-num = num * 100;
-num = Math.floor(num);
-Math.floor(Math.random() * 5) + 11;
+// let num = Math.random();
+// num = num * 100;
+// num = Math.floor(num);
+// Math.floor(Math.random() * 5) + 11;
+
+//Guessing game
+// const a = prompt("enter the maximum number");
+// const random = Math.floor(Math.random() * 5) + 1;
+// let guess = prompt("guess the number");
+// while (true) {
+//   if (guess == "quit") {
+//     console.log("user quit");
+//     break;
+//   }
+
+//   if (guess == random) {
+//     console.log("correct guess, random number was", random);
+//     break;
+//   } else if (guess < random) {
+//     guess = prompt("too small, try again");
+//   } else if (guess > random) {
+//     guess = prompt("too big, try again");
+//   }
+//   //   else {
+//   //     guess = prompt("wrong guess, please try again");
+//   //   }
+// }
+
+//random representing dice roll
+// const num = Math.floor(Math.random() * 6) + 1;
+// console.log(num);
+
+// const car = {
+//   nam: "Toyota",
+//   model: "Fortuner",
+//   color: "black",
+// };
+
+// const person = {
+//   uname: "harsha",
+//   age: "21",
+//   city: "anantapur",
+// };
+
+//FUNCTION
+// function hello() {
+//   console.log("hello world!");
+// }
+
+// hello();
+// function printName() {
+//   console.log("Sree Harsha M");
+//   for (i = 1; i <= 5; i++) {
+//     console.log(i);
+//   }
+// }
+// printName();
+
+// function poem() {
+//   console.log("Twinkle Twinkle little star");
+//   console.log("How i wonder what you are");
+//   console.log("Up above in the sky");
+//   console.log("like a diamond in the sky");
+// }
+// poem();
+
+// function dice() {
+//   console.log(Math.floor(Math.random() * 6) + 1);
+// }
+// dice();
+
+//FUNCTION With Arguments
+// function sum(a, b) {
+//   console.log(a + b);
+// }
+// sum(1, 2);
+
+// function Info(uname, age) {
+//   console.log(uname, "is", age, "Years old.");
+// }
+// Info("Harsha", 21);
+// Info("Hari", 22);
+
+// function average(a, b, c) {
+//   console.log((a + b + c) / 3);
+// }
+// average(5, 6, 7);
+
+// function table(a) {
+//   for (i = 1; i <= 10; i++) {
+//     console.log(`${a} x ${i} = ${a * i}`);
+//   }
+// }
+// table(59);
+
+//FUNCTION With Return values
+function sum(a, b) {
+  return a + b;
+}
+console.log(sum(3, 2));
+
+function sum(n) {
+  let x = 0;
+  for (i = 1; i <= n; i++) {
+    x = x + i;
+  }
+  return x;
+}
+console.log(sum(100));
+
+function concat(str) {
+  let result = "";
+  for (i = 0; i < str.length; i++) {
+    result += str[i];
+  }
+  return result;
+}
+str = ["hello", "my", "is", "Sree Harsha M"];
+console.log(concat(str));
