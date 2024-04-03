@@ -568,26 +568,197 @@
 // table(59);
 
 //FUNCTION With Return values
-function sum(a, b) {
-  return a + b;
-}
-console.log(sum(3, 2));
+// function sum(a, b) {
+//   return a + b;
+// }
+// console.log(sum(3, 2));
 
-function sum(n) {
-  let x = 0;
-  for (i = 1; i <= n; i++) {
-    x = x + i;
-  }
-  return x;
-}
-console.log(sum(100));
+// function sum(n) {
+//   let x = 0;
+//   for (i = 1; i <= n; i++) {
+//     x = x + i;
+//   }
+//   return x;
+// }
+// console.log(sum(100));
 
-function concat(str) {
-  let result = "";
-  for (i = 0; i < str.length; i++) {
-    result += str[i];
+// function concat(str) {
+//   let result = "";
+//   for (i = 0; i < str.length; i++) {
+//     result += str[i];
+//   }
+//   return result;
+// }
+// str = ["hello", "my", "is", "Sree Harsha M"];
+// console.log(concat(str));
+
+//SCOPE in function
+
+// let sum = 5;
+// function csum(a, b) {
+//   let sum = a + b;
+// }
+
+// csum(1, 2);
+// console.log(sum);
+
+//BLOCK Scope
+// let age = 25;
+// if (age >= 18) {
+//   let str = "adult";
+//   console.log(str);
+// }
+
+//LEXICAL Scope
+
+// function outer() {
+//   let x = 5;
+//   let y = 6;
+//   function inner() {
+//     console.log(x);
+//     console.log(y);
+//   }
+//   inner();
+// }
+
+//Example Q's
+
+// let greet = "hello";
+
+// function outg() {
+//   let greet = "namaste";
+//   console.log(greet);
+//   function inng() {
+//     console.log(greet);
+//   }
+//   inng();
+// }
+// console.log(greet);
+// outg();
+
+// const sum = function (a, b) {
+//   return a + b;
+// };
+// console.log(sum(2, 3));
+
+// function multipleGreet(func, count) {
+//   for (let i = 1; i <= count; i++) {
+//     func();
+//   }
+// }
+
+// let greet = function () {
+//   console.log("hello");
+// };
+// multipleGreet(greet, 10);
+
+// function oddEven(request) {
+//   if (request == "odd") {
+//     return function (n) {
+//       console.log(!(n % 2 == 0));
+//     };
+//   } else if (request == "even") {
+//     return function (n) {
+//       console.log(n % 2 == 0);
+//     };
+//   } else {
+//     console.log("wrong request");
+//   }
+// }
+
+// let request = "even";
+
+// const cal = {
+//   add: function (a, b) {
+//     return a + b;
+//   },
+//   sub: function (a, b) {
+//     return a - b;
+//   },
+//   mul: function (a, b) {
+//     return a * b;
+//   },
+// };
+
+// //OR
+// const cal1 = {
+//   add(a, b) {
+//     return a + b;
+//   },
+//   sub(a, b) {
+//     return a - b;
+//   },
+//   mul(a, b) {
+//     return a * b;
+//   },
+// };
+
+// let arr = [1, 9, 5, 7];
+// let num = 5;
+// function high(arr, num) {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > num) {
+//       console.log(arr[i]);
+//     }
+//   }
+// }
+
+// high(arr, num);
+
+function unq(str) {
+  let ans = " ";
+  for (let i = 0; i < str.length; i++) {
+    let cr = str[i];
+    if (ans.indexOf(cr) == -1) {
+      ans += cr;
+    }
   }
-  return result;
+  return ans;
 }
-str = ["hello", "my", "is", "Sree Harsha M"];
-console.log(concat(str));
+let str1 = "abcdabcdefgggh";
+console.log(unq(str1));
+
+const country = ["india", "Germany", "USA", "Seattle"];
+
+function high(country) {
+  let ans = 0;
+  for (i = 0; i < country.length; i++) {
+    a1 = country[ans].length;
+    a2 = country[i].length;
+    if (a1 < a2) {
+      ans = i;
+    }
+  }
+  return country[ans];
+}
+console.log(high(country));
+
+let str = "harshaaeiou";
+let count = 0;
+for (let i = 0; i < str.length; i++) {
+  if (
+    str[i] == "a" ||
+    str[i] == "e" ||
+    str[i] == "i" ||
+    str[i] == "o" ||
+    str[i] == "u"
+  ) {
+    count++;
+  }
+}
+console.log(count);
+
+// let arr1 = [1, 2, 3, 4, 5, 10, 7];
+// let a = 0;
+// for (let i = 0; i < arr1.length; i++) {
+//   if (a < arr1[i + 1]) {
+//     a = arr1[i + 1];
+//   }
+// }
+// console.log(a);
+
+let start = 5;
+let end = 10;
+diff = end - start;
+let rand = Math.floor(Math.random() * diff) + start;
+console.log(rand);
