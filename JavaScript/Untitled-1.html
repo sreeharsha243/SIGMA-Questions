@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Export to Excel</title>
+  </head>
+  <body>
+    <button onclick="exportToExcel()">Export Data to Excel</button>
+
+    <script>
+      function exportToExcel() {
+        var savedText = localStorage.getItem("savedText");
+        if (!savedText) {
+          alert("No data found in local storage.");
+          return;
+        }
+
+        var csvContent = "data:text/csv;charset=utf-8," + savedText;
+        var encodedUri = encodeURI(csvContent);
+        var link = document.createElement("a");
+        link.setAttribute("href", encodedUri);
+        link.setAttribute("download", "exported_data.csv");
+        document.body.appendChild(link); // Required for Firefox
+        link.click();
+      }
+    </script>
+  </body>
+</html>
