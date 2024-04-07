@@ -705,48 +705,48 @@
 
 // high(arr, num);
 
-function unq(str) {
-  let ans = " ";
-  for (let i = 0; i < str.length; i++) {
-    let cr = str[i];
-    if (ans.indexOf(cr) == -1) {
-      ans += cr;
-    }
-  }
-  return ans;
-}
-let str1 = "abcdabcdefgggh";
-console.log(unq(str1));
+// function unq(str) {
+//   let ans = " ";
+//   for (let i = 0; i < str.length; i++) {
+//     let cr = str[i];
+//     if (ans.indexOf(cr) == -1) {
+//       ans += cr;
+//     }
+//   }
+//   return ans;
+// }
+// let str1 = "abcdabcdefgggh";
+// console.log(unq(str1));
 
-const country = ["india", "Germany", "USA", "Seattle"];
+// const country = ["india", "Germany", "USA", "Seattle"];
 
-function high(country) {
-  let ans = 0;
-  for (i = 0; i < country.length; i++) {
-    a1 = country[ans].length;
-    a2 = country[i].length;
-    if (a1 < a2) {
-      ans = i;
-    }
-  }
-  return country[ans];
-}
-console.log(high(country));
+// function high(country) {
+//   let ans = 0;
+//   for (i = 0; i < country.length; i++) {
+//     a1 = country[ans].length;
+//     a2 = country[i].length;
+//     if (a1 < a2) {
+//       ans = i;
+//     }
+//   }
+//   return country[ans];
+// }
+// console.log(high(country));
 
-let str = "harshaaeiou";
-let count = 0;
-for (let i = 0; i < str.length; i++) {
-  if (
-    str[i] == "a" ||
-    str[i] == "e" ||
-    str[i] == "i" ||
-    str[i] == "o" ||
-    str[i] == "u"
-  ) {
-    count++;
-  }
-}
-console.log(count);
+// let str = "harshaaeiou";
+// let count = 0;
+// for (let i = 0; i < str.length; i++) {
+//   if (
+//     str[i] == "a" ||
+//     str[i] == "e" ||
+//     str[i] == "i" ||
+//     str[i] == "o" ||
+//     str[i] == "u"
+//   ) {
+//     count++;
+//   }
+// }
+// console.log(count);
 
 // let arr1 = [1, 2, 3, 4, 5, 10, 7];
 // let a = 0;
@@ -757,8 +757,20 @@ console.log(count);
 // }
 // console.log(a);
 
-let start = 5;
-let end = 10;
-diff = end - start;
-let rand = Math.floor(Math.random() * diff) + start;
-console.log(rand);
+// let start = 5;
+// let end = 10;
+// diff = end - start;
+// let rand = Math.floor(Math.random() * diff) + start;
+// console.log(rand);
+
+const student = {
+  name: "harsha",
+  age: 23,
+  eng: 95,
+  math: 93,
+  phy: 97,
+  getavg() {
+    let avg = (this.eng + this.math + this.phy) / 3;
+    console.log(`${this.name} got avg marks = ${avg}`);
+  },
+};
