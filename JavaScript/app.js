@@ -763,14 +763,33 @@
 // let rand = Math.floor(Math.random() * diff) + start;
 // console.log(rand);
 
-const student = {
-  name: "harsha",
-  age: 23,
-  eng: 95,
-  math: 93,
-  phy: 97,
-  getavg() {
-    let avg = (this.eng + this.math + this.phy) / 3;
-    console.log(`${this.name} got avg marks = ${avg}`);
-  },
+// const student = {
+//   name: "harsha",
+//   age: 23,
+//   eng: 95,
+//   math: 93,
+//   phy: 97,
+//   getavg() {
+//     let avg = (this.eng + this.math + this.phy) / 3;
+//     console.log(`${this.name} got avg marks = ${avg}`);
+//   },
+// };
+
+//Try and Catch block
+// console.log("hello");
+// try {
+//   console.log(a);
+// } catch {
+//   console.log("Error");
+// }
+// console.log("hello2");
+
+//Arrow functions
+const sum = (a, b) => console.log(a + b);
+
+sum(10, 20);
+
+const cube = (n) => {
+  n * n * n;
 };
+console.log(cube(5));
