@@ -785,11 +785,213 @@
 // console.log("hello2");
 
 //Arrow functions
-const sum = (a, b) => console.log(a + b);
+// const sum = (a, b) => console.log(a + b);
 
-sum(10, 20);
+// sum(10, 20);
 
-const cube = (n) => {
-  n * n * n;
-};
-console.log(cube(5));
+// const cube = (n) => {
+//   n * n * n;
+// };
+// console.log(cube(5));
+
+//set Timeout function
+
+// console.log("hi there");
+
+// setTimeout(() => {
+//   console.log("Sree Harsha M");
+// }, 1000);
+// //Or
+// setTimeout(hi, 4000);
+
+// function hi() {
+//   console.log("Sree Harsha M");
+// }
+
+// console.log("Welcomes you");
+
+//set Interval function
+
+// let iq = setInterval(() => {
+//   console.log("hello");
+// }, 2000);
+// console.log(iq);
+
+//this with arrow functions *****
+// const student = {
+//   name: "Harsha",
+//   marks: 82,
+//   prop: this,
+//   getName: function () {
+//     console.log(this);
+//     return this.name;
+//   },
+//   getMarks: () => {
+//     console.log(this);
+//     return this.marks; //for arrow functions this is known as parent scope
+//   },
+//   getInfo: function () {
+//     setTimeout(() => console.log(this), 1000); //student
+//   },
+//   getInfo2: function () {
+//     setTimeout(function () {
+//       console.log(this); //window
+//     }, 1000);
+//   },
+// };
+
+//practice Q's
+// let sqr = (n) => {
+//   console.log(n * n);
+// };
+
+// let id = setInterval(() => {
+//   console.log("hello world");
+// }, 2000);
+
+// setTimeout(() => {
+//   clearInterval(id);
+//   console.log("clear interval ");
+// }, 10000);
+
+//part 7 practice questions
+// const arr = (a1) => {
+//   let a2 = 0;
+//   const a = a1.length;
+//   for (i = 0; i < a1.length; i++) {
+//     a2 = a2 + a1[i];
+//   }
+//   return a2 / a;
+// };
+
+// let arr1 = [10, 12];
+// console.log(arr(arr1));
+
+// const iseven = (n) => {
+//   if (n % 2 == 0) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// };
+
+// console.log("Given number is " + iseven(12));
+
+// const object = {
+//   message: "Hello, World!",
+//   logMsg() {
+//     console.log(this.message);
+//   },
+// };
+// setTimeout(object.logMsg, 1000);
+
+// let length = 4;
+// function callback() {
+//   console.log(this.length);
+// }
+// const object1 = {
+//   length: 5,
+//   method(callback) {
+//     callback();
+//   },
+// };
+// object1.method(callback, 1, 2);
+
+//Array Methods
+// let arr = [1, 2, 3, 4, 5];
+
+// let print = function (el) {
+//   console.log(el);
+// };
+
+// arr.forEach(print);
+
+// arr.forEach(function (el) {
+//   console.log(el);
+// });
+
+// let arr = [
+//   {
+//     name: "Harsha",
+//     marks: 82,
+//   },
+//   {
+//     name: "Hari",
+//     marks: 90,
+//   },
+// ];
+
+// arr.forEach((el) => {
+//   console.log(el.marks);
+// });
+
+// let gpa = arr.map((el) => {
+//   return el.marks / 10;
+// });
+
+//array MAP
+let num = [1, 2, 3, 4];
+// let double = num.map((el) => {
+//   return el * 2;
+// });
+
+//array FILTER
+// let even = num.filter((el) => {
+//   return el % 2 == 0;
+// });
+
+//array EVERY
+// let a1 = num.every((el) => {
+//   //for all correct values it prints true or false in remaining cases
+//   return el % 2 == 0;
+// });
+
+//array SOME
+// let red = num.reduce((res, el) => {
+//   //accumulator is a variable used to store the values of elements
+//   //reduce(accumulator,element)
+//   console.log(res);
+//   return res + el;
+// });
+// console.log(red);
+
+// let arr = [1, 4, 2, 7, 10, 7];
+// let max = -1;
+
+// for (let i = 0; i < arr.length; i++) {
+//   if (max < arr[i]) {
+//     max = arr[i];
+//   }
+// }
+// console.log(max);
+
+// let max1 = arr.reduce((max, el) => {
+//   if (max < el) {
+//     return el;
+//   } else {
+//     return max;
+//   }
+// });
+// console.log(max1);
+
+//practice Questions
+// let arr = [10, 100, 40, 50];
+
+// let mul = arr.every((el) => {
+//   return el % 10 == 0;
+// });
+// console.log(mul);
+
+// let min = arr.reduce((res, el) => {
+//   if (res < el) {
+//     return res;
+//   } else {
+//     return el;
+//   }
+// });
+// console.log(min);
+
+//Default Parameters
+function sum(a = 1, b = 1) {
+  return a + b;
+}
