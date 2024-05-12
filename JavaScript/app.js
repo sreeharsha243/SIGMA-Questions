@@ -992,6 +992,101 @@ let num = [1, 2, 3, 4];
 // console.log(min);
 
 //Default Parameters
-function sum(a = 1, b = 1) {
-  return a + b;
-}
+// function sum(a = 1, b = 1) {
+//   return a + b;
+// }
+
+//spread for separating values
+// console.log(Math.min(10, 1, 100));
+// let arr = [1, 2, 3, 2, 3, 1, 0, 1, 3, 1, 0, -1];
+// console.log(Math.min(...arr));
+// console.log(...arr);
+// console.log(..."SreeHarshaM");
+
+//spread with array literals
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+// let newArr = [...arr];
+// console.log(newArr);
+
+// let a1 = "Harsha";
+// let chars = [...a1];
+// console.log(chars);
+
+// let odd = [1, 3, 5, 7, 9];
+// let even = [2, 4, 6, 8, 10];
+// let nums = [...odd, ...even];
+// console.log(nums);
+
+//spread with Object literals
+// let data = {
+//   email: "msharsha8118@gmail.com",
+//   pass: "abcd",
+// };
+
+// let cpy = { ...data, id: 123 };
+
+// let arr1 = [1, 2, 3, 4, 5, 6, 7, 8];
+// let cp = { ...arr1 };
+
+//REST(inverse of spread)
+// function sum(...args) {
+//   for (let i = 0; i < args.length; i++) {
+//     console.log("you gave number", args[i]);
+//   }
+// }
+
+// sum(1, 2, 3, 4);
+
+// function min() {
+//   console.log(arguments.length);
+// }
+
+// min(1, 2, 3, 4);
+
+// function sum(...args) {
+//   return args.reduce((sum, el) => sum + el);
+// }
+
+//Destructuring
+// let names = ["tony", "bruce", "steve", "peter"];
+// let [winner, runner, ...others] = names;
+// console.log(winner, runner, others);
+
+//Destructuring with objects
+// const student = {
+//   name: "harsha",
+//   age: 21,
+//   clas: 12,
+// };
+
+// let { name: username, age, clas: hel = 13 } = student;
+
+//part-8 practice questions
+// let arr = [1, 2, 3, 4, 5];
+// const sqr = arr.map((num) => num * num);
+// console.log(sqr);
+
+// const add = arr.reduce((a, b) => a + b);
+// console.log(add);
+
+// const avg = add / arr.length;
+// console.log(avg);
+
+// let number = [2, 4, 6, 8, -2, -4];
+// console.log(number.map((num) => num + 5));
+
+// let words = ["harsha", "hello", "hari", "high"];
+// console.log(words.map((wr) => wr.toUpperCase()));
+
+// const doubleAndReturnArgs = (arr, ...args) => [
+//   ...arr,
+//   ...args.map((v) => v * 2),
+// ];
+
+// let arr = [1, 2, 3, 4];
+// console.log(doubleAndReturnArgs(arr, 5, 6));
+
+// const mergeObjects = (o1, o2) => ({ ...o1, ...o2 });
+// mergeObjects({ a: 1, b: 2 }, { c: 3, d: 4 });
+
+//DOM(Documnet Object Model)
