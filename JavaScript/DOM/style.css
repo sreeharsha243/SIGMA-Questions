@@ -1,5 +1,6 @@
 body {
   font-family: Arial;
+  text-align: center;
 }
 
 #mainImg {
@@ -43,4 +44,11 @@ body {
 .b1 {
   background-color: blue;
   color: white;
+}
+
+div {
+  height: 100px;
+  width: 500px;
+  border: 1px solid black;
+  margin: auto;
 }

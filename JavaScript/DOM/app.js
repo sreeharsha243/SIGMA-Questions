@@ -125,3 +125,76 @@
 
 //DOM events
 //Events are signals that something has occured.(user inputs/actions)
+// let btn = document.querySelector("button");
+// console.dir(btn);
+// //onclick event
+// btn.onmouseenter = function () {
+//   console.log("hello");
+// };
+// btn.onclick = function () {
+//   console.log("Button Clicked");
+// };
+// //while calling function don't add parathensis
+// function hello() {
+//   alert("Hello!");
+// }
+
+// //Event Listeners
+// //for this we can n number of event listeners
+// btn.addEventListener("click", function () {
+//   console.log("button clicked");
+// });
+
+//GENERATE RANDOM COLOR ON WEB PAGE
+// let btn = document.querySelector("button");
+// btn.addEventListener("click", function () {
+//   let h3 = document.querySelector("h3");
+//   let rndm = getRandomclr();
+//   h3.innerText = rndm;
+//   let div = document.querySelector("div");
+//   div.style.backgroundColor = rndm;
+// });
+
+// function getRandomclr() {
+//   let r = Math.floor(Math.random() * 255);
+//   let g = Math.floor(Math.random() * 255);
+//   let b = Math.floor(Math.random() * 255);
+
+//   let clr = `rgb(${r},${g},${b})`;
+//   return clr;
+// }
+
+//mouseevent
+// let p = document.querySelector("p");
+// p.addEventListener("click", function () {
+//   console.log("paragraph was clicked");
+// });
+
+//this in event listeners
+// let p = document.querySelector("p");
+// p.addEventListener("click", function () {
+//   console.log(this.innerText);
+//   this.style.backgroundColor = "red";
+// });
+
+//keyboard events
+let btn = document.querySelector("button");
+btn.addEventListener("click", function (event) {
+  console.log(event);
+});
+
+let inp = document.querySelector("input");
+inp.addEventListener("keydown", function (event) {
+  // console.log(event);
+  // console.log("key pressed");
+  console.log("code=", event.code);
+  if (event.code == "ArrowUp") {
+    console.log("characters moves forward");
+  } else if (event.code == "ArrowDown") {
+    console.log("characters moves backward");
+  } else if (event.code == "ArrowLeft") {
+    console.log("characters moves left");
+  } else if (event.code == "ArrowRight") {
+    console.log("characters moves right");
+  }
+});
