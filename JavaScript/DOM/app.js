@@ -178,23 +178,61 @@
 // });
 
 //keyboard events
-let btn = document.querySelector("button");
-btn.addEventListener("click", function (event) {
-  console.log(event);
-});
+// let btn = document.querySelector("button");
+// btn.addEventListener("click", function (event) {
+//   console.log(event);
+// });
 
-let inp = document.querySelector("input");
-inp.addEventListener("keydown", function (event) {
-  // console.log(event);
-  // console.log("key pressed");
-  console.log("code=", event.code);
-  if (event.code == "ArrowUp") {
-    console.log("characters moves forward");
-  } else if (event.code == "ArrowDown") {
-    console.log("characters moves backward");
-  } else if (event.code == "ArrowLeft") {
-    console.log("characters moves left");
-  } else if (event.code == "ArrowRight") {
-    console.log("characters moves right");
-  }
-});
+// let inp = document.querySelector("input");
+// inp.addEventListener("keydown", function (event) {
+//   // console.log(event);
+//   // console.log("key pressed");
+//   console.log("code=", event.code);
+//   if (event.code == "ArrowUp") {
+//     console.log("characters moves forward");
+//   } else if (event.code == "ArrowDown") {
+//     console.log("characters moves backward");
+//   } else if (event.code == "ArrowLeft") {
+//     console.log("characters moves left");
+//   } else if (event.code == "ArrowRight") {
+//     console.log("characters moves right");
+//   }
+// });
+
+//form events
+// let form = document.querySelector("form");
+// form.addEventListener("submit", function (event) {
+//   event.preventDefault(); //prevent to goto next pages
+//   // alert("form submitted");
+//   // console.dir(form);
+//   // let inp = document.querySelector("input");
+//   // console.dir(inp);
+//   // console.log(inp.value);
+// });
+
+// //More events like change and input
+// let user = document.querySelector("#user");
+// user.addEventListener("change", function (event) {
+//   event.preventDefault();
+//   console.log("input changed");
+//   console.log("final value =", this.value);
+// });
+
+// let inp = document.querySelector("input");
+// inp.addEventListener("mouseout", (event) => {});
+// onmouseout = (event) => {};
+
+// let bd = document.querySelector("body");
+// let btn = document.createElement("button");
+// btn.innerText = "click me";
+// bd.append(btn);
+// btn.addEventListener("click", function () {
+//   btn.style.backgroundColor = "green";
+//   return btn;
+// });
+
+// let inp = document.querySelector("input");
+// let h2 = document.querySelector("h2");
+// inp.addEventListener("keypress", function () {
+//   h2.innerText = inp.value;
+// });
